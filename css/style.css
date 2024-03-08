@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -17,8 +17,7 @@
 
 .main-nav{
     width: 100%;/*ocupar toda a area disponivel*/
-    max-width: 600px;/*trava a largura maxima que definir para o projeto*/
-    padding: 0 16px;/*primeiro é cima e baixo, segundo esquerda e direita*/
+    
 }
 
 .header-list-container{
@@ -46,3 +45,29 @@ hr{
 .nav-item:hover{
     color: rgba(0, 0, 139, 0.7);/*quando passar o mouse troca a cor / rgba passa a cor e no final*/
     transition: 0.2s;
+}
+
+.main-about{
+    padding: 40px 0 64px;
+}
+
+.container{
+    max-width: 600px; /*trava a a largura maxima de um que definimos para o projeto*/
+    padding: 0 16px; /*primeiro cima/baixo, segundo esquerda/direita*/
+    margin: 0 auto; /*não aplica cima/baixo, o auto deistribui o maximo para direita e esquerda*/
+    
+}
+.about-title{
+    font-family: "Raleway",sans-serif; /*pega a fonte importada, caso ele não encontre ultiliza a sans-*/
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.about-image{
+    float: left; /*Alinha a imagem a esquerda e o texto a direita*/
+    margin: 0 20px 10px 0; /*o topo, 20 direita, 10 baixo e 0 esquerda*/
+    width: 200px; /*largura*/
+    height: auto; /*evita a distorçao da imagem*/
+}

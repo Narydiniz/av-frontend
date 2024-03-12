@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-li{
-    list-style-type: none; /*retira as bolinhas dos elementos*/
-}
-
 :root {
     --blue: #00008b;
     --gray: #555555;
@@ -17,6 +13,14 @@ li{
     --red: #ff0000;
     --white: #ffffff;
     --darkgray: #959595;
+}
+
+body {
+    font: 400 22px "Roboto", sans-serif; /*Dar fonte a todo body, com peso regular 400 e tamanho 22, caso nao ache  a fonte importada ultiliza a fonte secundaria*/
+}
+
+li{
+    list-style-type: none; /*retira as bolinhas dos elementos*/
 }
 
 /*Header*/
@@ -41,8 +45,6 @@ li{
     padding: 16px 0;/*primeiro é esquerda e direita, segundo cima e baixo*/
 }
     
-
-
 .nav-item {
 
     text-transform: uppercase;/*deixar todas as letras em maiusculo*/
@@ -73,8 +75,8 @@ hr {
     margin: 0 auto; /*não aplica cima/baixo, o auto deistribui o maximo para direita e esquerda*/
     
 }
-.about-title {
-    font-family: "Raleway",sans-serif; /*pega a fonte importada, caso ele não encontre ultiliza a sans-*/
+.title-median {
+    font-family: "Raleway",sans-serif; /*pega a fonte importada, caso ele não encontre ultiliza a sans- serifi*/
     font-size: 32px;
     text-align: center;
     text-transform: uppercase;
@@ -99,7 +101,7 @@ hr {
     padding: 15px 0; /*aplica o espaçamento 15px cima/baixo e 0 esquerda/direita*/
 }
 
-.main-footer-container {
+.footer-container {
     display: flex; /*deixar tudo na mesma linha*/
     align-items: center; /* alinha todos os elementos*/
     justify-content:space-between /* colar nome de um lado e lista de icones do outro*/
@@ -112,11 +114,6 @@ hr {
 
 }
 
-.list-container {
-    display: flex; /*deixar elementos na mesma linha*/
-    align-items: center; /*alinhar todos os elementos*/
-    justify-content:space-between; /* colocar o nome de um lado e os icones do outro*/
-}
 
 .footer-item { 
     width: 50px;
@@ -128,4 +125,69 @@ hr {
     margin-left: 16px; /*Aplica na mesma class seguindo em diante, ate chegar seguindo em um elemento pai*/
 }
 
+/* Contato*/
 
+.contact-text {
+    text-align: center; /*Alinhha o texto*/
+    margin-bottom: 30px; /*Separa o paragrafo do formulário*/
+    font-size: 28px; /* Altera o tamanho da fonte*/
+    color: var(--gray); /*altera a cor do texto*/
+}
+
+.contact{
+    background-color: var(--skyblue); /* cor do fundo do formulario*/
+    padding: 30px; /*espaçamento*/
+    max-width: 600px; /*tamanho frfinifo para o projeto*/
+    margin-right: auto; /*empura para direita*/
+    margin-left: auto; /*empura para esquerda*/
+    margin-bottom: 20px; /*espaçamento  para baixo*/
+}
+
+.contact-label{
+    display: block; /*coloca os elementos um em cima do outro*/
+    margin-bottom: 20px; /*espaçamento  para baixo*/
+    color: var(--blue); /*altera a cor do texto*/
+}
+
+.contact-field {
+    display:block; /*coloca os elementos um em cima do outro*/
+    width: 100%; /*ocupa o mespaço maximo disponivel*/
+    height: 30px; /* aumenta a altura do campo*/
+    font-size: 16px; /* Altera o tamanho da fonte*/
+    padding-left: 10px; /* empurra o elemento de dento do campo para a esquerda*/
+    border: none; /*Remove a borda*/
+}
+
+.contact-field:focus { /*Troca a cor do fundo da area do formulário ao clicar*/
+    background-color: var(--silver); /* cor do fundo */
+    outline: none; /*remove a linha interna do campo do formulário*/
+}
+
+textarea.contact-field {
+    height: 150px; /* aumenta a altura do campo*/
+    padding: 10px; /*espaçamento em todas as direçoes*/
+    font-family: "Roboto", calibri; /* Utiliza fonte importada, caso caso ele não encontre ultiliza a secundaria*/
+}
+
+.button-form {
+    background-color: var(--blue); /*cor do fundo do botão*/
+    color: var(--white); /*cor da fonte  botão*/
+    border: 2px solid var(--blue); /* Adiciona borda ao botão*/
+    border-radius: 10px; /* Arredonda as bordas do botão*/
+    padding: 2px 6px; /* aumenta o botão 2 para cima/baixo e 6 esquerda/direita*/
+    font-weight: bold; /* aumenta o peso da fonte, deixa ela mais espeça*/
+    cursor: pointer; /*modifica o cursor*/
+}
+
+.button-form:hover {
+    background-color: var(--white); /*cor do fundo do botão*/
+    color: var(--blue); /*cor da fonte  botão*/
+}
+
+.contact-maps {
+    width: 600px;
+    margin-right:auto; /*empura para direita*/
+    margin-left: auto; /*empura para esquerda*/
+    padding-bottom: 20px;  /*empurra o mapa para baixo*/
+
+}

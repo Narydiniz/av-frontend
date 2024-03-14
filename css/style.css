@@ -15,7 +15,7 @@
     --darkgray: #959595;
 }
 
-body {
+body, button ,input {
     font: 400 22px "Roboto", sans-serif; /*Dar fonte a todo body, com peso regular 400 e tamanho 22, caso nao ache  a fonte importada ultiliza a fonte secundaria*/
 }
 
@@ -221,4 +221,47 @@ textarea.contact-field {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
+    padding-bottom: 20px;
+}
+
+.product {
+    display: flex; /*colocar tudo na mesma linha*/
+    flex-direction: column; /*alinha em coluna,um embaixo do outro*/
+    align-items: center; /*alinha os itens ao centro*/
+}
+
+.product-title {
+    font-size: 20px; /*Tamanho da fonte*/
+    margin-bottom: 6px;
+}
+
+.product-image {
+    width: 320px; /* trava colocar 2 produtos por linha, pq o espaço do projeto é de 600px*/
+    height:220px ; /* trava a altura da imagem*/
+    margin-bottom: 20px; /* aplica espaço abaico da imageem*/
+}
+
+.product-price-container {
+    width: 100%; /*ocupa o mespaço maximo disponivel*/
+    display: flex; /* alinha os elementos na mesma linha*/
+    justify-content:space-between; /**/
+    align-items: center;
+}
+
+.product-price {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+
+.button-hover {
+    background-color: var(--skyblue);
+    color: var(--blue);
+    border: 2px solid var(--skyblue);
+    border: 4 2px px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button-hover:hover {
+    background-color: transparent;
 }

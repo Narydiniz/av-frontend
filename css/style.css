@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -264,4 +264,17 @@ textarea.contact-field {
 }
 .button-hover:hover {
     background-color: transparent;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse; /*faz com que as bordas se colapsem, entre uma nas outras*/
+ 
+}
+
+.table-head-item {
+    text-align: start;
+    border-bottom: 1px solid var(--darkgray); /*adiciona a linha da borda embaixo*/
+    padding-bottom: 6px;
+    text-transform: uppercase; /*transforma o texto em maiusculo*/
 }

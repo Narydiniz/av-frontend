@@ -59,7 +59,7 @@
             <h2 class="title-median">Tenis</h2>
             <div class="product-container">
 
-                <div>
+                <div class="product">
                     <strong class="product-title"> Produto 1 </strong>
                     <img class="product-image" src="images/tenis-azul.jpeg" alt="tenis-azul">
                     <div  class="product-price-container">
@@ -68,7 +68,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="product">
                     <strong   class="product-title"> Produto 2 </strong>
                     <img class="product-image" src="images/tenis-branco.jpeg" alt="tenis-branco">
                     <div class="product-price-container">
@@ -77,7 +77,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="product">
                     <strong  class="product-title"> Produto 3 </strong>
                     <img class="product-image" src="images/tenis-preto.jpeg" alt="tenis-preto">
                     <div class="product-price-container">
@@ -86,7 +86,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="product">
                     <strong  class="product-title"> Produto 4 </strong>
                     <img class="product-image" src="images/tenis-rosa.jpeg" alt="tenis-rosa">
                     <div class="product-price-container">
@@ -97,7 +97,7 @@
             </div>
 
         </section>
-
+        <br>
         <section>
             <h2 class="title-median">Meias</h2>
             <div class="product-container">
@@ -140,7 +140,7 @@
             </div>
             
         </section>
-
+        <br>
         <section>
             <h2 class="title-median">Tocas</h2>
             <div class="product-container">
@@ -182,29 +182,64 @@
                 </div>
             </div>
         </section>
-
+        <br>
         <section>
             <h2 class="title-median">Carrinho</h2>
-            <table>
-                <thead>
+            <table class="cart-table">
+                <thead> <!--Cabeçalho da tabela-->
                     <tr>
-                        <th>Item</th>
-                        <th>Preço</th>
-                        <th>Quantidade</th>
+                        <th class="table-head-item frist-col">Item</th>
+                        <th class="table-head-item second-col">Preço</th>
+                        <th class="table-head-item third-col">Quantidade</th>
                     </tr>    
                 </thead>
 
-                <tfoot>
+                <tbody><!--Corpo da tabela-->
+                    <tr class="cart-product">
+                        <td class="product-idenfitication">
+                            <img class="cart-product-image" src="images/meia-preta.jpeg" alt="meia-preta">
+                            <strong class="cart-product-title">Meia Preta</strong>
+                        </td>
+
+                        <td>
+                            <span class="cart-prpduct-price">R$ 129,99</span>
+                        </td>
+
+                        <td>
+                            <input class="product-qnt-input" type="number" value="2" min="0">
+                            <button class="remove-product-button" type="button"> Remover</button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+
+                        <td class="product-idenfitication">
+                            <img class="cart-product-image" src="images/toca-kit.jpeg" alt="Kit Tocas">
+                            <strong  class="cart-product-title">Kit Tocas</strong>
+                        </td>
+
+                        <td>
+                            <span class="cart-prpduct-price">R$ 129,99</span>
+                        </td>
+
+                        <td>
+                            <input class="product-qnt-input" type="number" value="1" min="0">
+                            <button  class="remove-product-button" type="button"> Remover</button>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+                <tfoot> <!--Rodape da tabela-->
                     <tr>
-                        <td colspan="3">
+                        <td class="cart-total-container" colspan="3">
                             <strong>Total</strong>
-                            <span>0,00</span>
+                            <span>389,97</span>
                         </td>
                     </tr>
                 </tfoot>
             </table>
             
-    <button type="button">Finalizar compra</button>
+    <button class="purchase-button" type="button">Finalizar compra</button>
 
         </section>
 

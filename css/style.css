@@ -278,3 +278,78 @@ textarea.contact-field {
     padding-bottom: 6px;
     text-transform: uppercase; /*transforma o texto em maiusculo*/
 }
+
+.second-col,
+.third-col {
+    width: 25%; /*fazer a segunda e atrerceira coluna ocuparem o maximo de 25%*/
+}
+
+.cart-product {
+    padding: 8px; /*criar um espaçamento entre os elementos*/
+}
+
+.product-idenfitication {
+    display: flex;
+    align-items: center;
+}
+.cart-product-image {
+    width: 120px;
+    height: 80px;
+}
+
+.cart-product-title {
+    margin-left: 15px;/*cria um espaçamento entre o texto e a immagem*/
+}
+
+.cart-prpduct-price {
+    font-family: "Raleway", sans-serif;
+}
+
+.product-qnt-input {
+    width: 40px;
+    height: 35px;
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    background-color: var(--silver);
+    text-align: center;
+}
+
+.remove-product-button {
+    background-color: var(--red);
+    color: var(--white);
+    border: 0;
+    border-radius: 5px;
+    padding: 4px 2px;
+    margin-left: 5px;
+}
+
+.remove-product-button:hover {
+    filter: brightness(0.8); /*diminui o brilho  do botão com essa propriedade*/
+}
+
+.cart-total-container {
+    border-top:  1px solid var(--darkgray);
+    text-align: end; /*leva pro final do campo*/
+    padding: 6px 16px 0 0; /*top direita baixo esquerda*/
+}
+
+.cart-total-container strong {
+    margin-right: 10px;
+}
+
+.purchase-button {
+    display: flex; /*quebrar para centralizar*/
+    padding: 16px 20px ; /*cima/baixo direita/esquerda*/
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 5px;
+    text-transform: uppercase; /*letra maiuscula*/
+    border: 0;
+    font-weight: bold;
+    margin: 24px auto 0; /*cima esquerda/direita baixo*/
+    
+}
+
+.purchase-button:hover {
+    filter: brightness(0.8);
+}

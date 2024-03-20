@@ -101,7 +101,7 @@ hr {
     padding: 15px 0; /*aplica o espaçamento 15px cima/baixo e 0 esquerda/direita*/
 }
 
-.footer-container {
+.main-footer-container {
     display: flex; /*deixar tudo na mesma linha*/
     align-items: center; /* alinha todos os elementos*/
     justify-content:space-between /* colar nome de um lado e lista de icones do outro*/
@@ -112,6 +112,12 @@ hr {
     color: var(--blue); /*aplica cor com a variavel criada no root no CSS*/
     font-size: 26px; /*aumenta o tamanho da fonte*/
 
+}
+
+.list-container {
+    display: flex; /*deixar tudo na mesma linha*/
+    align-items: center; /* alinha todos os elementos*/
+    justify-content:space-between /* colar nome de um lado e lista de icones do outro*/
 }
 
 
@@ -352,4 +358,22 @@ textarea.contact-field {
 
 .purchase-button:hover {
     filter: brightness(0.8);
+}
+
+/*Responsividade*/
+
+@media (max-width: 725px) {
+    .footer-container {
+    flex-direction: column; 
+    }
+}
+
+
+
+@media (max-width:420px){
+    .main-header {
+        font-size: 18px;
+    }
+    .header-list-container
+         padding: 0;
 }

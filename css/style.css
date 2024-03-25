@@ -476,6 +476,13 @@ textarea.contact-field {
  }
 }
 
+/*580*/
+@media(max-width: 580px){
+    .product-qnt-input{
+        margin-left: 22px;
+    }
+}
+
 
 
 
@@ -502,4 +509,4 @@ textarea.contact-field {
   .header-list-container{
       font-size: 17px;
   }
-}
+}---

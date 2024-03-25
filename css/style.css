@@ -216,6 +216,10 @@ textarea.contact-field {
     padding-bottom: 10px;  /*empurra otexto para baixo*/
 }
 
+.descriptions {
+    font-family: "Raleway", sans-serif;
+}
+
 .emphasis {
     background-color: var(--skyblue); /*cor do fundo do texto*/
     color: var(--blue); /*cor da fonte*/
@@ -477,9 +481,10 @@ textarea.contact-field {
 }
 
 /*580*/
-@media(max-width: 580px){
+@media(max-width: 594px){
     .product-qnt-input{
-        margin-left: 22px;
+        margin-left:auto;
+        margin-right:auto;
     }
 }
 
@@ -509,4 +514,4 @@ textarea.contact-field {
   .header-list-container{
       font-size: 17px;
   }
-}---
+}
